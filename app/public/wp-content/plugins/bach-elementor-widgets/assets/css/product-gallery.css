@@ -1,0 +1,139 @@
+/* 🔹 Product Gallery Wrapper */
+.product-gallery-wrapper {
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 15px;
+  /* prevent edge-to-edge on mobile */
+  box-sizing: border-box;
+}
+
+/* 🔹 Sorting Dropdown */
+.sorting {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.sorting select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* 🔹 Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* 🔹 Product Card */
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-card .discount {
+  font-size: 12px;
+  color: red;
+  margin-left: 5px;
+}
+
+.product-card button {
+  background: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.product-card button:hover {
+  background: #005bb5;
+}
+
+/* 🔹 Loader */
+#loader {
+  text-align: center;
+  display: none;
+  font-size: 16px;
+  color: #0073e6;
+  margin-top: 20px;
+}
+
+/* 🔹 Responsive Breakpoints */
+@media (max-width: 992px) {
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card .price {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sorting {
+    text-align: left;
+    /* dropdown aligns better on mobile */
+  }
+
+  .product-grid {
+    gap: 15px;
+  }
+
+  .product-card {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card h3 {
+    font-size: 15px;
+  }
+
+  .product-card p {
+    font-size: 13px;
+  }
+
+  .product-card .price {
+    font-size: 14px;
+  }
+
+  .product-card button {
+    width: 100%;
+    /* full width button on mobile */
+    padding: 10px;
+  }
+}

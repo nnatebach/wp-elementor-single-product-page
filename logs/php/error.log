@@ -1,0 +1,56 @@
+[17-Sep-2025 11:58:59 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php:6
+Stack trace:
+#0 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-blog-header.php(19): require_once('/Users/nhanbach...')
+#2 /Users/nhanbach/Local Sites/wp-elementor/app/public/index.php(17): require('/Users/nhanbach...')
+#3 {main}
+  thrown in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php on line 6
+[17-Sep-2025 11:59:06 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php:6
+Stack trace:
+#0 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-blog-header.php(19): require_once('/Users/nhanbach...')
+#2 /Users/nhanbach/Local Sites/wp-elementor/app/public/index.php(17): require('/Users/nhanbach...')
+#3 {main}
+  thrown in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php on line 6
+[17-Sep-2025 11:59:06 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php:6
+Stack trace:
+#0 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-blog-header.php(19): require_once('/Users/nhanbach...')
+#2 /Users/nhanbach/Local Sites/wp-elementor/app/public/index.php(17): require('/Users/nhanbach...')
+#3 {main}
+  thrown in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php on line 6
+[17-Sep-2025 11:59:06 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php:6
+Stack trace:
+#0 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-blog-header.php(19): require_once('/Users/nhanbach...')
+#2 /Users/nhanbach/Local Sites/wp-elementor/app/public/index.php(17): require('/Users/nhanbach...')
+#3 {main}
+  thrown in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php on line 6
+[17-Sep-2025 14:00:49 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php:6
+Stack trace:
+#0 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-blog-header.php(19): require_once('/Users/nhanbach...')
+#2 /Users/nhanbach/Local Sites/wp-elementor/app/public/index.php(17): require('/Users/nhanbach...')
+#3 {main}
+  thrown in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php on line 6
+[19-Sep-2025 11:22:22 UTC] PHP Warning:  include(/Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/plugins/bach-elementor-widgets/templates/single-product.php): Failed to open stream: No such file or directory in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template-loader.php on line 106
+[19-Sep-2025 11:22:22 UTC] PHP Warning:  include(): Failed opening '/Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/plugins/bach-elementor-widgets/templates/single-product.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template-loader.php on line 106
+[19-Sep-2025 16:47:49 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "mew_register_assets" not found or invalid function name in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/script-loader.php(2299): do_action('wp_enqueue_scri...')
+#3 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/general-template.php(3192): do_action('wp_head')
+#7 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/header.php(7): wp_head()
+#8 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template.php(810): require_once('/Users/nhanbach...')
+#9 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template.php(745): load_template('/Users/nhanbach...', true, Array)
+#10 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-content/themes/bachdev-wordpress/index.php(1): get_header()
+#12 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/template-loader.php(106): include('/Users/nhanbach...')
+#13 /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-blog-header.php(19): require_once('/Users/nhanbach...')
+#14 /Users/nhanbach/Local Sites/wp-elementor/app/public/index.php(17): require('/Users/nhanbach...')
+#15 {main}
+  thrown in /Users/nhanbach/Local Sites/wp-elementor/app/public/wp-includes/class-wp-hook.php on line 324

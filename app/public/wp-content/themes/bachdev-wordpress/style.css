@@ -1,0 +1,173 @@
+/*
+Theme Name: Bach Theme
+Author: Bach
+Version: 1.0
+*/
+
+/* -------------------------
+   Base Styles (Mobile First)
+   ------------------------- */
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  /* 16px default */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+/* Layout Helpers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navigation */
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-list li {
+  list-style-type: none;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* common styles */
+
+.section-head .wrapper,
+.section-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1.entry-title {
+  display: none;
+}
+
+/* section-footer */
+
+.section-footer {
+  color: #fff;
+  background-color: #212936;
+}
+
+.section-footer .nav-list a {
+  color: #fff;
+}
+
+/* Product Grid Example */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* default: 1 column (mobile) */
+  gap: 1rem;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+/* -------------------------
+   Media Queries (Mobile → Up)
+   ------------------------- */
+
+/* Tablet (≥768px) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+    /* slightly larger text */
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-head .wrapper,
+  .section-footer .wrapper {
+    padding: 0 30px;
+  }
+}
+
+/* Small Desktop (≥1024px) */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wrapper {
+    padding: 0 30px;
+  }
+}
+
+/* Large Desktop (≥1280px) */
+@media screen and (min-width: 1280px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
